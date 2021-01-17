@@ -5,22 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busy Or Not</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <div id="busy-or-not-box">
+        <h1 id="message">Status checken...</h1>
+
+    </div>
 
 
-    
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.3/firebase-app.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAxNDj5jXYMv2eDAEERruTqAlmanLj-wXs",
+            authDomain: "busy-or-not.firebaseapp.com",
+            databaseURL: "https://busy-or-not-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "busy-or-not",
+            storageBucket: "busy-or-not.appspot.com",
+            messagingSenderId: "799843033422",
+            appId: "1:799843033422:web:932a55388adb5f261cbe1f",
+            measurementId: "G-B2VN836WS6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

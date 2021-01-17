@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+}
+
+#busy-or-not-box {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
